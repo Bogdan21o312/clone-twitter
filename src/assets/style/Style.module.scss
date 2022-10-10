@@ -45,11 +45,13 @@ $responsiveType: 1;
 
 body {
   background-color: $bodyThemeLightColor;
+  color: $titleThemeLightColor;
 }
 
 @media (prefers-color-scheme: dark) {
   body {
     background-color: $bodyThemeDarkColor;
+    color: $titleThemeDarkColor;
   }
 }
 
