@@ -1,0 +1,28 @@
+@use "sass:math";
+@import "src/assets/style/Style.module";
+
+.TitleBig {
+  color: $titleThemeLightColor;
+  @include adaptiveValue("font-size", 64, 30);
+  font-weight: 700;
+  line-height: math.div(84, 64);
+  @media (prefers-color-scheme: dark) {
+    color: $titleThemeDarkColor;
+  }
+  span {
+    color: $blueColor;
+  }
+}
+
+.TitleMedium {
+  color: $titleThemeLightColor;
+  @include adaptiveValue("font-size", 31, 28);
+  line-height: math.div(36, 31);
+  font-weight: 700;
+  @media (prefers-color-scheme: dark) {
+    color: $titleThemeDarkColor;
+  }
+  span {
+    color: $blueColor;
+  }
+}
