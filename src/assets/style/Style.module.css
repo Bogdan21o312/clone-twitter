@@ -1,21 +1,21 @@
 /*
 Error: Invalid CSS after "...ing: 0 rem(math": expected ")", was ".div($container..."
-        on line 106 of Style.module.scss
+        on line 108 of Style.module.scss
 
-101:       max-width: rem($maxWidthContainer);
-102:       box-sizing: content-box;
-103:       margin: 0 auto;
-104:     }
-105:     @if ($containerPadding>0) {
-106:       padding: 0 rem(math.div($containerPadding, 2));
-107:     }
-108:   }
-109: } @else {
-110:   // By break points
-111:   [class*="__container"] {
+103:       max-width: rem($maxWidthContainer);
+104:       box-sizing: content-box;
+105:       margin: 0 auto;
+106:     }
+107:     @if ($containerPadding>0) {
+108:       padding: 0 rem(math.div($containerPadding, 2));
+109:     }
+110:   }
+111: } @else {
+112:   // By break points
+113:   [class*="__container"] {
 
 Backtrace:
-Style.module.scss:106
+Style.module.scss:108
 /Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/scss/parser.rb:1308:in `expected'
 /Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/script/lexer.rb:240:in `expected!'
 /Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/script/parser.rb:862:in `assert_tok'
@@ -77,4 +77,4 @@ Style.module.scss:106
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Invalid CSS after \"...ing: 0 rem(math\": expected \")\", was \".div($container...\"\A         on line 106 of Style.module.scss\A \A 101:       max-width: rem($maxWidthContainer);\A 102:       box-sizing: content-box;\A 103:       margin: 0 auto;\A 104:     }\A 105:     @if ($containerPadding>0) {\A 106:       padding: 0 rem(math.div($containerPadding, 2));\A 107:     }\A 108:   }\A 109: } @else {\A 110:   // By break points\A 111:   [class*=\"__container\"] {"; }
+  content: "Error: Invalid CSS after \"...ing: 0 rem(math\": expected \")\", was \".div($container...\"\A         on line 108 of Style.module.scss\A \A 103:       max-width: rem($maxWidthContainer);\A 104:       box-sizing: content-box;\A 105:       margin: 0 auto;\A 106:     }\A 107:     @if ($containerPadding>0) {\A 108:       padding: 0 rem(math.div($containerPadding, 2));\A 109:     }\A 110:   }\A 111: } @else {\A 112:   // By break points\A 113:   [class*=\"__container\"] {"; }
