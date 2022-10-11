@@ -30,12 +30,12 @@ const Index = () => {
                     </div>
                     <div className={classes.mainButtons}>
                         <button className={classes.mainButton}>
-                            <Google/> Sign up with Google
+                            <Google className={classes.mainGoogle}/> Sign up with Google
                         </button>
                         <button className={classes.mainButton}>
-                            <Apple style={{fill: "white"}}/> Sign up with Apple
+                            <Apple className={classes.mainApple}/> <span>Sign up with Apple</span>
                         </button>
-                        <span>or</span>
+                        <div className={classes.mainOr}>or</div>
                         <button className={classes.mainButtonOr}>
                             Sign up with Apple phone or email
                         </button>
@@ -43,10 +43,12 @@ const Index = () => {
                             By signing up, you agree to
                             the <span>Terms of Service</span> and <span>Privacy<br/>Policy</span>, including <span>Cookie Use.</span>
                         </p>
-                        <Text variant={TextVariants.TitleMedium}>
-                            Already have an account?
-                        </Text>
-                        <button className={classes.mainButton}>
+                        <div className={classes.mainSubTitle}>
+                            <Text variant={TextVariants.TitleMedium}>
+                                Already have an account?
+                            </Text>
+                        </div>
+                        <button className={classes.mainButtonSignIn}>
                             <span>Sign in</span>
                         </button>
                     </div>
@@ -55,6 +57,24 @@ const Index = () => {
             <footer className={classes.footer}>
                 <span>About</span>
                 <span>Help Center</span>
+                <span>Terms of Service</span>
+                <span>Terms of Service</span>
+                <span>Terms of Service</span>
+                <span>Terms of Service</span>
+                <span>Terms of Service</span>
+                <span>Terms of Service</span>
+                <span>Terms of Service</span>
+                <span>Terms of Service</span>
+                <span>Terms of Service</span>
+                <span>Terms of Service</span>
+                <span>Terms of Service</span>
+                <span>Terms of Service</span>
+                <span>Terms of Service</span>
+                <span>Terms of Service</span>
+                <span>Terms of Service</span>
+                <span>Terms of Service</span>
+                <span>Terms of Service</span>
+                <span>Terms of Service</span>
                 <span>Terms of Service</span>
                 <span>Terms of Service</span>
                 <span>Terms of Service</span>
