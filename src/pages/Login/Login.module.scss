@@ -1,0 +1,31 @@
+@use "sass:math";
+@import "src/assets/style/Style.module";
+
+.container {
+}
+
+.content {
+  display: flex;
+}
+
+.images {
+  max-width: 50%;
+  position: relative;
+  display: flex;
+  align-items: center;
+  &Img {
+    img {
+      max-width: 100%;
+    }
+  }
+  &Logo {
+    position: absolute;
+    z-index: 2;
+    fill: $titleThemeLightColor;
+    @include adaptiveValue("width", 256, 32);
+    @include adaptiveValue("height", 256, 32);
+    @media (prefers-color-scheme: dark) {
+      fill: $titleThemeDarkColor;
+    }
+  }
+}
