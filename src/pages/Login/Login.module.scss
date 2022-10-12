@@ -155,38 +155,8 @@
   }
 
   &Button {
-    transition: all 0.3s ease 0s;
-    @include adaptiveValue("padding-top", 10, 10);
-    @include adaptiveValue("padding-bottom", 10, 10);
-    @include adaptiveValue("width", 300, 200);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    @include adaptiveValue("gap", 8, 4);
-    background-color: #fff;
-    border: rem(1) solid $darkThemeLightColor;
-    border-radius: rem(40);
-    @include adaptiveValue("font-size", 15, 12);
-
-    span {
-      font-weight: 800;
-    }
-
     &:not(:last-child) {
       @include adaptiveValue("margin-bottom", 20, 10);
-    }
-
-    @media (any-hover: hover) {
-      &:hover {
-        background-color: #d7d7d7;
-      }
-    }
-
-    @media (prefers-color-scheme: dark) {
-      border: none;
-    }
-    @media (max-width: em(1000)) {
-      width: 100%;
     }
   }
 
@@ -212,16 +182,6 @@
     @media (max-width: em(1000)) {
       width: 100%;
     }
-  }
-
-  &Google {
-    width: rem(20);
-    height: rem(20);
-  }
-
-  &Apple {
-    width: rem(14);
-    height: rem(16);
   }
 
   p {

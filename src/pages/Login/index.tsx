@@ -2,9 +2,8 @@ import React from 'react';
 import Text, {TextVariants} from "../../components/UI/Text";
 import classes from "./Login.module.scss"
 import {ReactComponent as Logo} from "../../assets/img/icons/logo.svg";
-import {ReactComponent as Google} from "../../assets/img/icons/gogle.svg";
-import {ReactComponent as Apple} from "../../assets/img/icons/apple.svg";
 import Images from "../../assets/img/login/images-01.png"
+import {AppleGoogle, GoogleLogin} from "../../components/UI/Buttons";
 
 const Index = () => {
     return (
@@ -29,11 +28,15 @@ const Index = () => {
                         </Text>
                     </div>
                     <div className={classes.mainButtons}>
+                        <div className={classes.mainButton}>
+                            <GoogleLogin>
+                                Sign up with Google
+                            </GoogleLogin>
+                        </div>
                         <button className={classes.mainButton}>
-                            <Google className={classes.mainGoogle}/> Sign up with Google
-                        </button>
-                        <button className={classes.mainButton}>
-                            <Apple className={classes.mainApple}/> <span>Sign up with Apple</span>
+                            <AppleGoogle>
+                                <span>Sign up with Apple</span>
+                            </AppleGoogle>
                         </button>
                         <div className={classes.mainOr}>or</div>
                         <button className={classes.mainButtonOr}>

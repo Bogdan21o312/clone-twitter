@@ -1,0 +1,87 @@
+@use "sass:math";
+@import "src/assets/style/Style.module";
+
+//Google====================================================================================================
+
+.iconGoogle {
+  width: rem(20);
+  height: rem(20);
+}
+
+.buttonGoogle {
+  transition: all 0.3s ease 0s;
+  @include adaptiveValue("padding-top", 10, 10);
+  @include adaptiveValue("padding-bottom", 10, 10);
+  @include adaptiveValue("width", 300, 200);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  @include adaptiveValue("gap", 8, 4);
+  background-color: #fff;
+  border: rem(1) solid $darkThemeLightColor;
+  border-radius: rem(40);
+  @include adaptiveValue("font-size", 15, 12);
+
+  span {
+    font-weight: 800;
+  }
+
+  &:not(:last-child) {
+    @include adaptiveValue("margin-bottom", 20, 10);
+  }
+
+  @media (any-hover: hover) {
+    &:hover {
+      background-color: #d7d7d7;
+    }
+  }
+
+  @media (prefers-color-scheme: dark) {
+    border: none;
+  }
+  @media (max-width: em(1000)) {
+    width: 100%;
+  }
+}
+
+//Apple====================================================================================================
+
+.iconApple {
+  width: rem(14);
+  height: rem(16);
+}
+
+.buttonApple {
+  transition: all 0.3s ease 0s;
+  @include adaptiveValue("padding-top", 10, 10);
+  @include adaptiveValue("padding-bottom", 10, 10);
+  @include adaptiveValue("width", 300, 200);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  @include adaptiveValue("gap", 8, 4);
+  background-color: #fff;
+  @include adaptiveValue("font-size", 15, 12);
+
+  span {
+    font-weight: 800;
+  }
+
+  &:not(:last-child) {
+    @include adaptiveValue("margin-bottom", 20, 10);
+  }
+
+  @media (any-hover: hover) {
+    &:hover {
+      background-color: #d7d7d7;
+    }
+  }
+
+  @media (prefers-color-scheme: dark) {
+    border: none;
+  }
+  @media (max-width: em(1000)) {
+    width: 100%;
+  }
+  border-radius: rem(40);
+}
